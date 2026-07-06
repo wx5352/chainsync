@@ -25,8 +25,7 @@ the *easiest* way for a Java backend to consume EVM data.
 
 ### Installation
 
-Available via [JitPack](https://jitpack.io) (replace `USER` with the GitHub owner and pick a
-released tag, e.g. `v0.1.0`):
+Available via [JitPack](https://jitpack.io) (pick a released tag, e.g. `v0.1.1`):
 
 ```xml
 <repositories>
@@ -37,13 +36,13 @@ released tag, e.g. `v0.1.0`):
 </repositories>
 
 <dependency>
-    <groupId>com.github.USER.chainsync</groupId>
+    <groupId>com.github.wx5352.chainsync</groupId>
     <artifactId>chainsync-spring-boot-starter</artifactId>
-    <version>v0.1.0</version>
+    <version>v0.1.1</version>
 </dependency>
 ```
 
-> Modules are published as `com.github.USER.chainsync:<module>:<tag>` — swap the `artifactId` for
+> Modules are published as `com.github.wx5352.chainsync:<module>:<tag>` — swap the `artifactId` for
 > `chainsync-core`, `chainsync-store-jdbc`, `chainsync-store-kafka`, etc. as needed.
 
 ### Quick start (Spring Boot)
