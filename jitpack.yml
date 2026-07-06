@@ -1,7 +1,8 @@
 # JitPack build configuration.
-# Pin the JDK so JitPack builds with the same version the project targets (Java 21).
+# Pin the JDK to 21 and build with the bundled Maven Wrapper (mvnw), which pins Maven 3.9.9.
+# JitPack's own Maven is too old for maven-compiler-plugin 3.13.0 (needs Maven >= 3.6.3).
 jdk:
   - openjdk21
 
 install:
-  - mvn -B install -DskipTests
+  - ./mvnw -B install -DskipTests
