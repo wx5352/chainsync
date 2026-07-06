@@ -5,9 +5,9 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <groupId>io.github.chainsync</groupId>
+        <groupId>io.github.wx5352</groupId>
         <artifactId>chainsync-parent</artifactId>
-        <version>0.1.0-SNAPSHOT</version>
+        <version>0.1.1</version>
     </parent>
 
     <artifactId>chainsync-spring-boot-starter</artifactId>
@@ -16,15 +16,15 @@
 
     <dependencies>
         <dependency>
-            <groupId>io.github.chainsync</groupId>
+            <groupId>io.github.wx5352</groupId>
             <artifactId>chainsync-core</artifactId>
         </dependency>
         <dependency>
-            <groupId>io.github.chainsync</groupId>
+            <groupId>io.github.wx5352</groupId>
             <artifactId>chainsync-engine</artifactId>
         </dependency>
         <dependency>
-            <groupId>io.github.chainsync</groupId>
+            <groupId>io.github.wx5352</groupId>
             <artifactId>chainsync-store-jdbc</artifactId>
         </dependency>
 
@@ -48,7 +48,7 @@
 
         <!-- Kafka support is optional: only used when store=kafka and spring-kafka is present -->
         <dependency>
-            <groupId>io.github.chainsync</groupId>
+            <groupId>io.github.wx5352</groupId>
             <artifactId>chainsync-store-kafka</artifactId>
             <optional>true</optional>
         </dependency>

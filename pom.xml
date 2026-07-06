@@ -4,14 +4,14 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>io.github.chainsync</groupId>
+    <groupId>io.github.wx5352</groupId>
     <artifactId>chainsync-parent</artifactId>
-    <version>0.1.0-SNAPSHOT</version>
+    <version>0.1.1</version>
     <packaging>pom</packaging>
 
     <name>chainsync-parent</name>
     <description>Zero-config EVM multi-chain (ETH/BNB/POL) data synchronization for Java/Spring backends</description>
-    <url>https://github.com/chainsync/chainsync</url>
+    <url>https://github.com/wx5352/chainsync</url>
 
     <licenses>
         <license>
@@ -22,22 +22,22 @@
 
     <developers>
         <developer>
-            <id>chainsync</id>
-            <name>chainsync contributors</name>
-            <url>https://github.com/chainsync/chainsync/graphs/contributors</url>
+            <id>wx5352</id>
+            <name>jacob</name>
+            <url>https://github.com/wx5352</url>
         </developer>
     </developers>
 
     <scm>
-        <connection>scm:git:https://github.com/chainsync/chainsync.git</connection>
-        <developerConnection>scm:git:git@github.com:chainsync/chainsync.git</developerConnection>
-        <url>https://github.com/chainsync/chainsync</url>
+        <connection>scm:git:https://github.com/wx5352/chainsync.git</connection>
+        <developerConnection>scm:git:git@github.com:wx5352/chainsync.git</developerConnection>
+        <url>https://github.com/wx5352/chainsync</url>
         <tag>HEAD</tag>
     </scm>
 
     <issueManagement>
         <system>GitHub Issues</system>
-        <url>https://github.com/chainsync/chainsync/issues</url>
+        <url>https://github.com/wx5352/chainsync/issues</url>
     </issueManagement>
 
     <modules>
@@ -70,22 +70,22 @@
         <dependencies>
             <!-- Internal modules -->
             <dependency>
-                <groupId>io.github.chainsync</groupId>
+                <groupId>io.github.wx5352</groupId>
                 <artifactId>chainsync-core</artifactId>
                 <version>${project.version}</version>
             </dependency>
             <dependency>
-                <groupId>io.github.chainsync</groupId>
+                <groupId>io.github.wx5352</groupId>
                 <artifactId>chainsync-engine</artifactId>
                 <version>${project.version}</version>
             </dependency>
             <dependency>
-                <groupId>io.github.chainsync</groupId>
+                <groupId>io.github.wx5352</groupId>
                 <artifactId>chainsync-store-jdbc</artifactId>
                 <version>${project.version}</version>
             </dependency>
             <dependency>
-                <groupId>io.github.chainsync</groupId>
+                <groupId>io.github.wx5352</groupId>
                 <artifactId>chainsync-store-kafka</artifactId>
                 <version>${project.version}</version>
             </dependency>
