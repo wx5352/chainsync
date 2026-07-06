@@ -1,0 +1,49 @@
+spring:
+  application:
+    name: chainsync-sample
+  # H2 in-memory DataSource -> chainsync persists sync cursors here (resume across restarts in a
+  # real DB). Swap for Postgres/MySQL in production by changing these properties only.
+  datasource:
+    url: jdbc:h2:mem:chainsync;DB_CLOSE_DELAY=-1
+    driver-class-name: org.h2.Driver
+    username: sa
+    password:
+
+chainsync:
+  enabled: true
+  # cursors are persisted via the JDBC DataSource above; block processing goes to TransferWatchHandler
+  store: jdbc
+  chains:
+    - name: ethereum
+      chain-id: 1
+      rpc-urls:
+        - https://eth.llamarpc.com
+        - https://rpc.ankr.com/eth
+      start-block: latest
+      confirmations: 6
+      poll-interval-ms: 4000
+      batch-size: 10
+      concurrency: 5
+      include-transactions: true
+      include-logs: true
+
+    - name: bsc
+      chain-id: 56
+      rpc-urls:
+        - https://bsc-dataseed.binance.org
+        - https://bsc-dataseed1.defibit.io
+      start-block: latest
+      confirmations: 10
+      include-logs: true
+
+    - name: polygon
+      chain-id: 137
+      rpc-urls:
+        - https://polygon-rpc.com
+      start-block: latest
+      confirmations: 30
+      include-logs: true
+
+logging:
+  level:
+    io.github.chainsync: INFO

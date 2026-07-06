@@ -1,0 +1,2 @@
+io.github.chainsync.spring.ChainsyncKafkaAutoConfiguration
+io.github.chainsync.spring.ChainsyncAutoConfiguration
