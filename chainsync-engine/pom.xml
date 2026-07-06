@@ -7,7 +7,7 @@
     <parent>
         <groupId>io.github.wx5352</groupId>
         <artifactId>chainsync-parent</artifactId>
-        <version>0.1.1</version>
+        <version>0.1.2</version>
     </parent>
 
     <artifactId>chainsync-engine</artifactId>
