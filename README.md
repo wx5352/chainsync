@@ -23,17 +23,32 @@ blockchain data:
 It is intentionally **not** another high-throughput indexer competing with Envio/SQD/Ponder — it is
 the *easiest* way for a Java backend to consume EVM data.
 
-### Quick start (Spring Boot)
+### Installation
 
-**1. Add the dependency**
+Available via [JitPack](https://jitpack.io) (replace `USER` with the GitHub owner and pick a
+released tag, e.g. `v0.1.0`):
 
 ```xml
+<repositories>
+    <repository>
+        <id>jitpack.io</id>
+        <url>https://jitpack.io</url>
+    </repository>
+</repositories>
+
 <dependency>
-    <groupId>io.github.chainsync</groupId>
+    <groupId>com.github.USER.chainsync</groupId>
     <artifactId>chainsync-spring-boot-starter</artifactId>
-    <version>0.1.0-SNAPSHOT</version>
+    <version>v0.1.0</version>
 </dependency>
 ```
+
+> Modules are published as `com.github.USER.chainsync:<module>:<tag>` — swap the `artifactId` for
+> `chainsync-core`, `chainsync-store-jdbc`, `chainsync-store-kafka`, etc. as needed.
+
+### Quick start (Spring Boot)
+
+**1. Add the dependency** (see [Installation](#installation) above)
 
 **2. Configure your chains** (`application.yml`)
 

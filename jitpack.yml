@@ -1,0 +1,7 @@
+# JitPack build configuration.
+# Pin the JDK so JitPack builds with the same version the project targets (Java 21).
+jdk:
+  - openjdk21
+
+install:
+  - mvn -B install -DskipTests
