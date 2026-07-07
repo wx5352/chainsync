@@ -2,6 +2,10 @@
 
 **Zero-config EVM multi-chain (ETH / BNB / Polygon) data synchronization for Java & Spring backends.**
 
+[![Maven Central](https://img.shields.io/maven-central/v/io.github.wx5352/chainsync-spring-boot-starter?label=Maven%20Central)](https://central.sonatype.com/artifact/io.github.wx5352/chainsync-spring-boot-starter)
+[![License](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](LICENSE)
+[![JDK](https://img.shields.io/badge/JDK-21%2B-orange.svg)](https://adoptium.net/)
+
 [English](#english) | [中文](#中文)
 
 ---
@@ -189,17 +193,45 @@ Apache License 2.0.
 
 它**不是**又一个和 Envio/SQD/Ponder 拼吞吐的索引器，而是让 Java 后端**最省心**地消费 EVM 数据的方式。
 
-### 快速开始（Spring Boot）
+### 安装
 
-**1. 引入依赖**
+#### Maven Central（推荐）
+
+无需额外配置仓库，直接引入依赖即可：
 
 ```xml
 <dependency>
-    <groupId>io.github.chainsync</groupId>
+    <groupId>io.github.wx5352</groupId>
     <artifactId>chainsync-spring-boot-starter</artifactId>
-    <version>0.1.0-SNAPSHOT</version>
+    <version>0.1.2</version>
 </dependency>
 ```
+
+> 各模块以 `io.github.wx5352:<模块名>:<版本>` 发布，按需把 `artifactId` 换成
+> `chainsync-core`、`chainsync-store-jdbc`、`chainsync-store-kafka` 等。
+
+#### JitPack（备选）
+
+也可通过 [JitPack](https://jitpack.io) 引入（groupId 为 `com.github.*`，版本用 tag）：
+
+```xml
+<repositories>
+    <repository>
+        <id>jitpack.io</id>
+        <url>https://jitpack.io</url>
+    </repository>
+</repositories>
+
+<dependency>
+    <groupId>com.github.wx5352.chainsync</groupId>
+    <artifactId>chainsync-spring-boot-starter</artifactId>
+    <version>v0.1.1</version>
+</dependency>
+```
+
+### 快速开始（Spring Boot）
+
+**1. 引入依赖**（见上方 [安装](#安装)）
 
 **2. 配置链**（`application.yml`）
 
